@@ -1,0 +1,193 @@
+;; Object ieeventanalysis/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ieeventanalysis/"
+  :tables
+  (list
+    (semanticdb-table "libevent_server.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("LIBEVENT_SERVER_H_" variable (:constant-flag t) nil [117 135])
+            ("data_handle.h" include nil nil [165 189])
+            ("event2/listener.h" include (:system-flag t) nil [190 217])
+            ("vector" include (:system-flag t) nil [218 234])
+            ("LibeventServer" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [258 265])
+                    ("LibeventServer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [282 291])
+                            ("num_of_threads" variable (:type "int") (reparse-symbol arg-sub-list) [291 310]))                          
+                        :type ("LibeventServer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [267 311])
+                    ("LibeventServer" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [313 331])
+                    ("Run" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [333 344])
+                    ("WaitForListenThread" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [352 379])
+                    ("AcceptConn" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("evconnlistener" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [405 422])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [423 427])
+                            ("" variable
+                               (:pointer 1
+                                :type ("sockaddr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [428 439])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [440 444])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [445 452]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [381 453])
+                    ("AcceptError" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("evconnlistener" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [479 496])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [497 504]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [455 505])
+                    ("private" label nil (reparse-symbol classsubparts) [506 514])
+                    ("StartListen" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [516 535])
+                    ("InitWorkerThreads" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [537 562])
+                    ("vec_worker_thread_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::shared_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [564 628])
+                    ("main_listen_thread_" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("std::thread" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [630 679])
+                    ("server_base_" variable
+                       (:pointer 1
+                        :type ("event_base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [681 707])
+                    ("server_conn_listenner_" variable
+                       (:pointer 1
+                        :type ("evconnlistener" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [709 748])
+                    ("listen_port_" variable (:type "int") (reparse-symbol classsubparts) [750 767])
+                    ("last_thread_index_" variable (:type "int") (reparse-symbol classsubparts) [776 799])
+                    ("num_of_workerthreads_" variable (:type "int") (reparse-symbol classsubparts) [815 841])
+                    ("current_max_session_id_" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [851 886]))                  
+                :type "class")
+                nil [236 905]))          
+      :file "libevent_server.h"
+      :pointmax 913
+      :fsize 980
+      :lastmodtime '(22065 33975 109864 455000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LIBEVENT_SERVER_H_")
+          )
+)
+    (semanticdb-table "libevent_server.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("libevent_server.h" include nil nil [85 113])
+            ("string.h" include (:system-flag t) nil [114 133])
+            ("LibeventServer::current_max_session_id_" variable
+               (:default-value "1"
+                :type "int")
+                nil [135 181])
+            ("LibeventServer" function
+               (:constructor-flag t
+                :parent "LibeventServer"
+                :arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [214 223])
+                    ("num_of_threads" variable (:type "int") (reparse-symbol arg-sub-list) [223 242]))                  
+                :type ("LibeventServer" type (:type "class") nil nil))
+                nil [183 380])
+            ("LibeventServer" function
+               (:destructor-flag t
+                :parent "LibeventServer"
+                :type "void")
+                nil [381 556])
+            ("Run" function
+               (:parent "LibeventServer"
+                :type "bool")
+                nil [558 705])
+            ("WaitForListenThread" function
+               (:parent "LibeventServer"
+                :type "void")
+                nil [707 783])
+            ("AcceptError" function
+               (:parent "LibeventServer"
+                :arguments 
+                  ( ("listener" variable
+                       (:pointer 1
+                        :type ("evconnlistener" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [818 843])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [844 854]))                  
+                :type "void")
+                nil [785 976])
+            ("AcceptConn" function
+               (:parent "LibeventServer"
+                :arguments 
+                  ( ("listener" variable
+                       (:pointer 1
+                        :type ("evconnlistener" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1010 1036])
+                    ("sock" variable (:type "int") (reparse-symbol arg-sub-list) [1037 1046])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1047 1063])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1064 1072])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1073 1083]))                  
+                :type "void")
+                nil [978 2003])
+            ("InitWorkerThreads" function
+               (:parent "LibeventServer"
+                :type "bool")
+                nil [2005 2543])
+            ("StartListen" function
+               (:parent "LibeventServer"
+                :type "bool")
+                nil [2545 3554]))          
+      :file "libevent_server.cpp"
+      :pointmax 3555
+      :fsize 3624
+      :lastmodtime '(22064 29651 325870 341000)
+      :unmatched-syntax nil))
+  :file "!home!chenms!cms!c++!libevent!dt-tongxin!ieeventanalysis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

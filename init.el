@@ -62,20 +62,31 @@
 ;; (define-key c++-mode-map  [(tab)] 'company-complete)
 
 ;; company
-(require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
-(delete 'company-semantic company-backends)
-(define-key c-mode-map  [(tab)] 'company-complete)
-(define-key c++-mode-map  [(tab)] 'company-complete)
+;; (require 'company)
+;; (delete 'company-semantic company-backends)
+;; (define-key c-mode-map  [(tab)] 'company-complete)
+;; (define-key c++-mode-map  [(tab)] 'company-complete)
 ;; (define-key c-mode-map  [(control tab)] 'company-complete)
 ;; (define-key c++-mode-map  [(control tab)] 'company-complete)
 
 ;; company-c-headers
-(add-to-list 'company-backends 'company-c-headers)
+;; (add-to-list 'company-backends 'company-c-headers)
 
 ;; hs-minor-mode for folding source code
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
+;; (SEMANTIC-gcc-get-include-paths LANG)
+;; (semantic-add-system-include "~/exp/include/boost_1_37" 'c++-mode)
+;;semantic-dependency-system-include-path
+;;(add-semantic-gcc-include-paths)
+;;(setq test "test")
+;;test
 
+;;auto-complete
+(ac-config-default)
+(defun my-c-mode-cedet-hook ()
+  (add-to-list 'ac-sources 'ac-source-gtags)
+  (add-to-list 'ac-sources 'ac-source-semantic))
+(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
 ;; Available C style:
 ;; “gnu”: The default style for GNU projects
 ;; “k&r”: What Kernighan and Ritchie, the authors of C used in their book

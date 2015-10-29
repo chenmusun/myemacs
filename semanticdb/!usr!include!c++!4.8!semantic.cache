@@ -1,0 +1,151 @@
+;; Object 4.8/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "4.8/"
+  :tables
+  (list
+    (semanticdb-table "vector"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_VECTOR" variable (:constant-flag t) nil [2248 2263])
+            ("bits/stl_algobase.h" include (:system-flag t) nil [2294 2324])
+            ("bits/allocator.h" include (:system-flag t) nil [2325 2352])
+            ("bits/stl_construct.h" include (:system-flag t) nil [2353 2384])
+            ("bits/stl_uninitialized.h" include (:system-flag t) nil [2385 2420])
+            ("bits/stl_vector.h" include (:system-flag t) nil [2421 2449])
+            ("bits/stl_bvector.h" include (:system-flag t) nil [2450 2479])
+            ("bits/range_access.h" include (:system-flag t) nil [2481 2511])
+            ("bits/vector.tcc" include (:system-flag t) nil [2546 2573]))          
+      :file "vector"
+      :pointmax 2726
+      :fsize 2725
+      :lastmodtime '(21844 57485 0 0)
+      :unmatched-syntax '((symbol 2279 . 2292) (symbol 2275 . 2278) (symbol 2268 . 2274) (punctuation 2267 . 2268))
+      :lexical-table 
+        '(("_GLIBCXX_VECTOR" . ((number "1" 2264 . 2265)))
+          )
+)
+    (semanticdb-table "new"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_NEW" variable (:constant-flag t) nil [1347 1351])
+            ("bits/c++config.h" include (:system-flag t) nil [1380 1407])
+            ("exception" include (:system-flag t) nil [1408 1428])
+            ("std" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "namespace"
+                :members 
+                  ( ("bad_alloc" type
+                       (:superclasses 
+                          ( ("exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1762 1769])
+                            ("bad_alloc" function
+                               (:constructor-flag t
+                                :type ("bad_alloc" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1774 1797])
+                            ("bad_alloc" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1908 1937])
+                            ("what" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [1982 2023]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1720 2028])
+                    ("nothrow_t" type (:type "struct") (reparse-symbol namespacesubparts) [2032 2053])
+                    ("nothrow" variable
+                       (:typemodifiers ("extern")
+                        :constant-flag t
+                        :type ("nothrow_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2057 2088])
+                    ("new_handler" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2201 2223])
+                    ("set_new_handler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("new_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2342 2354]))                          
+                        :type ("new_handler" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2314 2363]))                  )
+                (reparse-symbol extern-c-contents) [1484 2365]))          
+      :file "new"
+      :pointmax 4185
+      :fsize 4184
+      :lastmodtime '(21844 57486 0 0)
+      :unmatched-syntax '((symbol 4173 . 4176) (symbol 4162 . 4172) (symbol 4158 . 4161) (symbol 4151 . 4157) (punctuation 4150 . 4151) (semantic-list 4122 . 4125) (semantic-list "()" 4100 . 4121) (THROW "throw" 4100 . 4121) (semantic-list 4085 . 4099) (semantic-list 4083 . 4085) (DELETE 4077 . 4083) (OPERATOR 4068 . 4076) (VOID 4063 . 4067) (INLINE 4056 . 4062) (semantic-list 4052 . 4055) (semantic-list "()" 4030 . 4051) (THROW "throw" 4030 . 4051) (semantic-list 4015 . 4029) (DELETE 4007 . 4013) (OPERATOR 3998 . 4006) (VOID 3993 . 3997) (INLINE 3986 . 3992) (semantic-list 3919 . 3934) (semantic-list "()" 3897 . 3918) (THROW "throw" 3897 . 3918) (semantic-list 3872 . 3896) (semantic-list 3870 . 3872) (NEW 3867 . 3870) (OPERATOR 3858 . 3866) (punctuation 3856 . 3857) (VOID 3852 . 3856) (INLINE 3845 . 3851) (semantic-list 3829 . 3844) (semantic-list "()" 3807 . 3828) (THROW "throw" 3807 . 3828) (semantic-list 3782 . 3806) (NEW 3779 . 3782) (OPERATOR 3770 . 3778) (punctuation 3768 . 3769) (VOID 3764 . 3768) (INLINE 3757 . 3763) (punctuation 3707 . 3708) (semantic-list "()" 3644 . 3665) (THROW "throw" 3644 . 3665) (semantic-list 3613 . 3643) (semantic-list 3611 . 3613) (DELETE 3605 . 3611) (OPERATOR 3596 . 3604) (VOID 3591 . 3595) (punctuation 3589 . 3590) (semantic-list "()" 3526 . 3547) (THROW "throw" 3526 . 3547) (semantic-list 3495 . 3525) (DELETE 3489 . 3495) (OPERATOR 3480 . 3488) (VOID 3475 . 3479) (punctuation 3473 . 3474) (semantic-list "()" 3410 . 3431) (THROW "throw" 3410 . 3431) (semantic-list 3373 . 3409) (semantic-list 3371 . 3373) (NEW 3368 . 3371) (OPERATOR 3359 . 3367) (punctuation 3357 . 3358) (VOID 3353 . 3357) (punctuation 3351 . 3352) (semantic-list "()" 3288 . 3309) (THROW "throw" 3288 . 3309) (semantic-list 3251 . 3287) (NEW 3248 . 3251) (OPERATOR 3239 . 3247) (punctuation 3237 . 3238) (VOID 3233 . 3237) (punctuation 3231 . 3232) (semantic-list "()" 3168 . 3189) (THROW "throw" 3168 . 3189) (semantic-list 3160 . 3167) (semantic-list 3158 . 3160) (DELETE 3152 . 3158) (OPERATOR 3143 . 3151) (VOID 3138 . 3142) (punctuation 3136 . 3137) (semantic-list "()" 3073 . 3094) (THROW "throw" 3073 . 3094) (semantic-list 3065 . 3072) (DELETE 3059 . 3065) (OPERATOR 3050 . 3058) (VOID 3045 . 3049) (punctuation 3043 . 3044) (semantic-list #("(_EXC)" 0 1 (macros (("_EXC" symbol "std" 2986 . 2989)))) 2970 . 3001) (THROW "throw" 2970 . 3001) (semantic-list 2956 . 2969) (semantic-list 2954 . 2956) (NEW 2951 . 2954) (OPERATOR 2942 . 2950) (punctuation 2940 . 2941) (VOID 2936 . 2940) (punctuation 2934 . 2935) (semantic-list #("(_EXC)" 0 1 (macros (("_EXC" symbol "std" 2877 . 2880)))) 2861 . 2892) (THROW "throw" 2861 . 2892) (semantic-list 2847 . 2860) (NEW 2844 . 2847) (OPERATOR 2835 . 2843) (punctuation 2833 . 2834) (VOID 2829 . 2833) (TYPEDEF 2193 . 2200) (semantic-list 1457 . 1466) (symbol 1453 . 1457) (DEFAULT 1458 . 1465) (symbol 1442 . 1452) (DEFAULT 1458 . 1465) (symbol 1438 . 1441) (symbol 1431 . 1437) (punctuation 1430 . 1431) (symbol 1365 . 1378) (symbol 1361 . 1364) (symbol 1354 . 1360) (punctuation 1353 . 1354))
+      :lexical-table 
+        '(("_NEW")
+          )
+)
+    (semanticdb-table "exception"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__EXCEPTION__" variable (:constant-flag t) nil [1161 1174])
+            ("bits/c++config.h" include (:system-flag t) nil [1241 1268])
+            ("bits/atomic_lockfree_defines.h" include (:system-flag t) nil [1269 1310])
+            ("__gnu_cxx" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "namespace"
+                :members 
+                  ( ("__verbose_terminate_handler" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4798 4833]))                  )
+                (reparse-symbol extern-c-contents) [4268 4867])
+            ("std" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "namespace"
+                :members 
+                  ( ("exception" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1869 1876]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1847 2138])
+                    ("bad_exception" type
+                       (:superclasses 
+                          ( ("exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2320 2327]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2275 2636])
+                    ("terminate_handler" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2726 2755])
+                    ("unexpected_handler" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2846 2876])
+                    ("unexpected" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3545 3594]))                  )
+                (reparse-symbol extern-c-contents) [1328 4249]))          
+      :file "exception"
+      :pointmax 5070
+      :fsize 5069
+      :lastmodtime '(21844 57486 0 0)
+      :unmatched-syntax '((symbol 4924 . 4927) (symbol 4913 . 4923) (symbol 4909 . 4912) (symbol 4902 . 4908) (punctuation 4901 . 4902) (symbol 4857 . 4865) (punctuation 4220 . 4221) (semantic-list "()" 4172 . 4193) (THROW "throw" 4172 . 4193) (semantic-list 4169 . 4171) (symbol 4151 . 4169) (BOOL 4146 . 4150) (punctuation 3405 . 3406) (semantic-list "()" 3384 . 3405) (THROW "throw" 3384 . 3405) (semantic-list 3363 . 3383) (symbol 3349 . 3363) (symbol 3330 . 3348) (punctuation 3248 . 3249) (semantic-list "()" 3196 . 3217) (THROW "throw" 3196 . 3217) (semantic-list 3193 . 3195) (symbol 3184 . 3193) (VOID 3179 . 3183) (punctuation 3029 . 3030) (semantic-list "()" 3008 . 3029) (THROW "throw" 3008 . 3029) (semantic-list 2988 . 3007) (symbol 2975 . 2988) (symbol 2957 . 2974) (TYPEDEF 2838 . 2845) (TYPEDEF 2718 . 2725) (punctuation 2630 . 2631) (semantic-list "()" 2609 . 2630) (THROW "throw" 2609 . 2630) (CONST 2603 . 2608) (semantic-list 2600 . 2602) (symbol 2596 . 2600) (punctuation 2594 . 2595) (CHAR 2590 . 2594) (CONST 2584 . 2589) (VIRTUAL 2576 . 2583) (punctuation 2530 . 2531) (semantic-list "()" 2509 . 2530) (THROW "throw" 2509 . 2530) (semantic-list 2506 . 2508) (symbol 2493 . 2506) (punctuation 2492 . 2493) (VIRTUAL 2484 . 2491) (semantic-list 2370 . 2373) (semantic-list "()" 2348 . 2369) (THROW "throw" 2348 . 2369) (semantic-list 2345 . 2347) (symbol 2332 . 2345) (punctuation 2132 . 2133) (semantic-list "()" 2111 . 2132) (THROW "throw" 2111 . 2132) (CONST 2105 . 2110) (semantic-list 2102 . 2104) (symbol 2098 . 2102) (punctuation 2096 . 2097) (CHAR 2092 . 2096) (CONST 2086 . 2091) (VIRTUAL 2078 . 2085) (punctuation 1965 . 1966) (semantic-list "()" 1944 . 1965) (THROW "throw" 1944 . 1965) (semantic-list 1941 . 1943) (symbol 1932 . 1941) (punctuation 1931 . 1932) (VIRTUAL 1923 . 1930) (semantic-list 1915 . 1918) (semantic-list "()" 1893 . 1914) (THROW "throw" 1893 . 1914) (semantic-list 1890 . 1892) (symbol 1881 . 1890) (semantic-list 1230 . 1239) (symbol 1226 . 1230) (DEFAULT 1231 . 1238) (symbol 1215 . 1225) (DEFAULT 1231 . 1238) (symbol 1211 . 1214) (symbol 1204 . 1210) (punctuation 1203 . 1204) (symbol 1188 . 1201) (symbol 1184 . 1187) (symbol 1177 . 1183) (punctuation 1176 . 1177))
+      :lexical-table 
+        '(("__EXCEPTION__")
+          )
+))
+  :file "!usr!include!c++!4.8!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

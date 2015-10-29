@@ -1,0 +1,26 @@
+((("semantic" .
+   [0 0 0 1 0 1 0 0])
+  ("semantic-gcc-get-include-paths" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add-semantic-gcc-include-paths" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cdr" .
+   [0 0 1])
+  ("setq" .
+   [1 0 0 1])
+  ("car" .
+   [1 0 0])
+  ("c" .
+   [2])
+  ("while" .
+   [2 0 0 0 0])
+  ("list" .
+   [2 0 3 0])
+  ("defun" .
+   [1 0 0 0 1])
+  ("add-hook" .
+   [0 0 0 0 0 0 1 0])
+  ("semantic-init-hooks" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("add-paths-to-list" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])))
